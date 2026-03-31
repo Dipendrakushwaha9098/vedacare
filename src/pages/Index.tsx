@@ -4,6 +4,7 @@ import { ArrowRight, Leaf, Shield, Zap, Heart, Users, CheckCircle2 } from "lucid
 import { Button } from "@/components/ui/button";
 import { AnimatedBackground3D } from "@/components/AnimatedBackground3D";
 
+
 const features = [
   {
     icon: Heart,
@@ -36,6 +37,7 @@ const features = [
     description: "Track patient outcomes and clinic performance with live dashboards.",
   },
 ];
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
