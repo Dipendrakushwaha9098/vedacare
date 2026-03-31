@@ -63,6 +63,7 @@ const therapies = [
   },
 ];
 
+
 export default function TreatmentsPage() {
   return (
     <div className="min-h-screen bg-background">
