@@ -9,6 +9,7 @@ import { useAuth } from "@/context/AuthContext";
 import { toast } from "sonner";
 import heroImage from "@/assets/hero-ayurveda.jpg";
 
+
 export default function LoginPage() {
   const navigate = useNavigate();
   const { login } = useAuth();
@@ -36,6 +37,7 @@ export default function LoginPage() {
     }
   };
 
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
