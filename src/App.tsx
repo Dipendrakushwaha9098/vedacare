@@ -15,6 +15,7 @@ import NotFound from "./pages/NotFound";
 import AppLayout from "./components/AppLayout";
 import { AuthProvider, useAuth } from "@/context/AuthContext";
 
+
 const queryClient = new QueryClient();
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
