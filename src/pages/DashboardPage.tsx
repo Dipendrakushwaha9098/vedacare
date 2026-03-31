@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useQuery } from "@tanstack/react-query";
 import { useState, useMemo, useEffect } from "react";
+
 import {
   Users,
   CalendarDays,
@@ -39,6 +40,7 @@ import { useAuth } from "@/context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import { AnimatedBackground3D } from "@/components/AnimatedBackground3D";
+
 
 // ✅ TYPES
 type Patient = {
