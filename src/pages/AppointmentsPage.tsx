@@ -1,5 +1,6 @@
 import { useState, useEffect, createElement } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
 import {
   Plus, Clock, CheckCircle2, AlertCircle, Calendar,
   Search, X, Phone, MessageSquare, Eye, ChevronDown,
@@ -45,6 +46,7 @@ const STATUS_ICONS: Record<AppointmentStatus, React.ElementType> = {
   Ongoing: AlertCircle,
   Completed: CheckCircle2,
 };
+
 
 export default function AppointmentsPage() {
   const [searchQuery, setSearchQuery] = useState("");
