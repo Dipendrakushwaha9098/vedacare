@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Patient {
+  id             String        @id @default(uuid())
+  name           String
+  age            Int
+  gender         String
+  dosha          String
+  phone          String
+  bloodGroup     String?
+  address        String?
+  medicalHistory String?
+  lastVisit      DateTime      @default(now())
+  status         String        @default("Active")
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  appointments   Appointment[]
+}
+
+model Appointment {
+  id        String   @id @default(uuid())
+  patientId String
+  therapy   String
+  date      String // Format YYYY-MM-DD
+  time      String // Format HH:MM AM/PM
+  status    String   @default("Scheduled")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  patient   Patient  @relation(fields: [patientId], references: [id], onDelete: Cascade)
+}
+
+model Notification {
+  id        String   @id @default(uuid())
+  title     String
+  message   String
+  type      String   @default("info")
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
