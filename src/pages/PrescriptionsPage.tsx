@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { AnimatedCubes3D } from "@/components/AnimatedCubes3D";
 
+
 const prescriptions = [
   { id: "RX-001", patient: "Ramesh Kumar", doctor: "Dr. Ananya Sharma", date: "2026-03-25", medicines: ["Ashwagandha", "Triphala", "Brahmi"], status: "Active" },
   { id: "RX-002", patient: "Priya Sharma", doctor: "Dr. Ananya Sharma", date: "2026-03-24", medicines: ["Shatavari", "Guduchi", "Amalaki"], status: "Active" },
@@ -11,12 +12,14 @@ const prescriptions = [
   { id: "RX-004", patient: "Anita Patel", doctor: "Dr. Ananya Sharma", date: "2026-03-20", medicines: ["Neem", "Turmeric", "Amla"], status: "Active" },
 ];
 
+
 const invoices = [
   { id: "INV-1001", patient: "Ramesh Kumar", amount: "₹5,500", date: "2026-03-25", paid: true },
   { id: "INV-1002", patient: "Priya Sharma", amount: "₹3,800", date: "2026-03-24", paid: true },
   { id: "INV-1003", patient: "Suresh Singh", amount: "₹7,200", date: "2026-03-22", paid: false },
   { id: "INV-1004", patient: "Anita Patel", amount: "₹4,500", date: "2026-03-20", paid: true },
 ];
+
 
 export default function PrescriptionsPage() {
   return (
