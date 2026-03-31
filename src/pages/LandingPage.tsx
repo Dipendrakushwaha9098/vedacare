@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
+
 import {
   Leaf, CalendarDays, Users, Brain, Shield, ArrowRight, Star,
   ChevronRight, Package, BarChart3, MessageSquare, FileText,
@@ -21,6 +22,7 @@ const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
+
 
 // ── Data ────────────────────────────────────────────────────────────
 const features = [
