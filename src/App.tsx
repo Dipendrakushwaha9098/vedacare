@@ -11,6 +11,7 @@ import AppointmentsPage from "./pages/AppointmentsPage";
 import TreatmentsPage from "./pages/TreatmentsPage";
 import PrescriptionsPage from "./pages/PrescriptionsPage";
 import NotificationsPage from "./pages/NotificationsPage";
+import SettingsPage from "./pages/SettingsPage";
 import NotFound from "./pages/NotFound";
 import AppLayout from "./components/AppLayout";
 import { AuthProvider, useAuth } from "@/context/AuthContext";
@@ -47,6 +48,7 @@ const App = () => (
             <Route path="/treatments" element={<AppPage><TreatmentsPage /></AppPage>} />
             <Route path="/prescriptions" element={<AppPage><PrescriptionsPage /></AppPage>} />
             <Route path="/notifications" element={<AppPage><NotificationsPage /></AppPage>} />
+            <Route path="/settings" element={<AppPage><SettingsPage /></AppPage>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
